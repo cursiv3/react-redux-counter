@@ -1,10 +1,10 @@
 import React from "react";
 
-const Counter = props => {
+const Counter = ({ onAddClick, onRemoveClick }) => {
   return (
     <div>
-      <button onClick={props.onAddClick}>+</button>
-      <button onClick={props.onRemoveClick}>-</button>
+      <button onClick={onAddClick}>+</button>
+      <button onClick={onRemoveClick}>-</button>
     </div>
   );
 };

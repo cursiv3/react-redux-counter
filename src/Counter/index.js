@@ -4,8 +4,12 @@ import Counter from "./Counter";
 
 const mapDispatchToProps = dispatch => {
   return {
-    onAddClick: dispatch(addClick()),
-    onRemoveClick: dispatch(removeClick())
+    onAddClick: () => {
+      dispatch(addClick());
+    },
+    onRemoveClick: () => {
+      dispatch(removeClick());
+    }
   };
 };
 
