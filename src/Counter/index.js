@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { addClick, removeClick } from "../actions/index";
+import { addClick, removeClick } from "../actions";
 import Counter from "./Counter";
 
 const mapDispatchToProps = dispatch => {
@@ -13,4 +13,6 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(mapDispatchToProps)(Counter);
+const wrappedCounter = connect(mapDispatchToProps)(Counter);
+
+export default wrappedCounter;

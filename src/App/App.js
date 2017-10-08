@@ -1,11 +1,11 @@
 import React from "react";
 import Clicks from "../Clicks/index";
-import Counter from "../Counter/Counter";
+import wrappedCounter from "../Counter/index";
 
 const App = () => (
   <div>
     <Clicks />
-    <Counter />
+    <wrappedCounter />
   </div>
 );
 
