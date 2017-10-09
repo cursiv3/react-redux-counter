@@ -4,9 +4,11 @@ import { render } from "react-dom";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import App from "./App/App";
-import reducer from "./reducers/reducer";
+import rootReducer from "./reducers/rootReducer";
 
-let store = createStore(reducer);
+let store = createStore(rootReducer);
+
+console.log(store.getState());
 render(
   <Provider store={store}>
     <App />

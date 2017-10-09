@@ -1,7 +1,12 @@
 import React from "react";
 
-const Clicks = ({ clicks }) => {
-  return <div>Clicks: {clicks}</div>;
+const Clicks = ({ message, clicks }) => {
+  return (
+    <div>
+      Message: {message}
+      <p>clicks: {clicks}</p>
+    </div>
+  );
 };
 
 export default Clicks;

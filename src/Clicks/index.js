@@ -1,8 +1,9 @@
 import { connect } from "react-redux";
 import Clicks from "./Clicks";
 
-const mapStateToProps = state => {
-  return { clicks: state.clicks };
-};
+const mapStateToProps = state => ({
+  message: state.message,
+  clicks: state.clicks
+});
 
-export default connect(mapStateToProps)(Clicks);
+export default connect(mapStateToProps, null)(Clicks);

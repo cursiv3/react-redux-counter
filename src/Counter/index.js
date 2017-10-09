@@ -1,18 +1,25 @@
 import { connect } from "react-redux";
-import { addClick, removeClick } from "../actions";
+import { cool, awesome, neato, addClick, removeClick } from "../actions";
 import Counter from "./Counter";
 
 const mapDispatchToProps = dispatch => {
   return {
+    sendCool: () => {
+      dispatch(cool());
+    },
+    sendAwesome: () => {
+      dispatch(awesome());
+    },
+    sendNeato: () => {
+      dispatch(neato());
+    },
     onAddClick: () => {
       dispatch(addClick());
     },
-    onRemoveClick: () => {
+    removeClick: () => {
       dispatch(removeClick());
     }
   };
 };
 
-const wrappedCounter = connect(mapDispatchToProps)(Counter);
-
-export default wrappedCounter;
+export default connect(null, mapDispatchToProps)(Counter);
