@@ -16,7 +16,7 @@ const mapDispatchToProps = dispatch => {
     onAddClick: () => {
       dispatch(addClick());
     },
-    removeClick: () => {
+    onRemoveClick: () => {
       dispatch(removeClick());
     }
   };

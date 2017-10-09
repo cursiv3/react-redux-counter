@@ -1,11 +1,11 @@
 const INIT = { clicks: 0 };
 
-export const reducerB = (state = INIT, action) => {
+export const clicks = (state = INIT, action) => {
   switch (action.type) {
     case "increment":
-      return { clicks: state + 1 };
+      return { clicks: state.clicks + 1 };
     case "decrement":
-      return { clicks: state - 1 };
+      return { clicks: state.clicks - 1 };
     default:
       return state;
   }

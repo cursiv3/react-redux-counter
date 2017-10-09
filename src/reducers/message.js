@@ -1,6 +1,6 @@
 const INIT = { message: "null" };
 
-export const reducerA = (state = INIT, action) => {
+export const message = (state = INIT, action) => {
   switch (action.type) {
     case "cool":
       return { message: "cool" };
